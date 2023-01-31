@@ -16,11 +16,12 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    
+    <!-- add Google fonts here -->
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Space+Grotesk">
 
@@ -32,6 +33,11 @@
     <header class="p-5 mb-4">
       <h1 class="display-3 text-center">Work Day Scheduler</h1>
       <p id="currentDay" class="lead display-4 text-center"></p>
+      <!-- add a clear schedule buttom to clear local storage -->
+      <div class="d-flex justify-content-center">
+        <button id="clearScheduleBtn" type="button" class="btn btn-dark">Clear Schedule</button>
+      </div>
+      
     </header>
 
     <div class="container-fluid px-5">
@@ -107,6 +113,9 @@
         </button>
       </div>
     </div>
+
+    <!-- scroll to the top button -->
+    <a href='#' class="stt" title="scroll to top"></a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
