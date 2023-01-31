@@ -9,7 +9,12 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   $( ".saveBtn" ).click(function() {
-    alert( "Handler for .click() called." );
+    //get timeslot selected
+    var timeSlot = $(this).parent().attr("id").split("-")[1];
+    //get user's schedule item
+    var userInput = $(this).siblings(".description").val();
+    //add item to local storage
+    localStorage.setItem(timeSlot, userInput);
   });
   
   // TODO: Add code to apply the past, present, or future class to each time
