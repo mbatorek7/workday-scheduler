@@ -35,7 +35,7 @@ This application is designed to let you easily manage your busy workday schedule
 
 ### Screenshots
 Here is what the application initially looks like when you first open the page.
-![Final deployment of the web application.](./assets/images/starter.png)
+![Final deployment of the web application.](./Assets/images/starter.png)
 
 Here is what the application looks like when the user begins to use it.
-![Final deployment of the web application.](./assets/images/final-product.gif)
+![Final deployment of the web application.](./Assets/images/final-product.gif)
