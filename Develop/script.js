@@ -50,15 +50,8 @@ $(function () {
 });
 
 function updateClock () {
-  const date = new Date();
-  let day = date.getDate();
-  let month = date.getMonth() + 1; //add 1 because Jan = 0 and Dec = 11
-  let year = date.getFullYear();
-  let todaysDate = `${month}-${day}-${year}`;
-  let displayDate = document.getElementById("currentDay");
-  //get current time
-  var current_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
-  displayDate.innerHTML = todaysDate + ' ' + current_time;
+  var todaysDate = dayjs();
+  $("#currentDay").text(todaysDate.format('MMM D, YYYY, h:mm:ss a'));
 
   // call this function again in 1000ms to update time 
   setTimeout(updateClock, 1000);
